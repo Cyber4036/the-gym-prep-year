@@ -1,0 +1,11 @@
+1.Create a Promise that resolves with the message "Success!" after 1 second or rejects with "Failure!" after 1 second, based on a random condition.
+
+2.Create a JavaScript program that converts a callback-based function into a Promise-based function.
+
+3. Implement a function that fetches data from  JSONPlaceholder API (https://jsonplaceholder.typicode.com/todos) and returns the data as a Promise. Handle any errors that may occur during the fetch
+
+4. Write a function that takes an array of URLs, fetches data from each URL concurrently using Promise.all(), and returns the combined results.
+
+5. Create a function that returns a Promise which rejects if given an invalid input (e.g., negative number). Use .catch() to handle the error when calling this function.
+
+6. Create a function that receives a string and returns a Promise. The promise should resolve with the uppercase version of the string but reject if the string is null or undefined.

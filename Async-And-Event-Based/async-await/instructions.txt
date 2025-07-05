@@ -1,0 +1,9 @@
+1.Write an async function that returns a string after waiting for 2 seconds. Use the setTimeout function to simulate the delay.
+
+2.Implement a series of async functions that perform arithmetic operations: one function adds two numbers, another multiplies the result by 2, and a third subtracts 5. Chain these functions using await.
+
+3.Write an async function that takes multiple Promises and uses Promise.race() to return the result of the first Promise that resolves or rejects.
+
+4.Create three async functions that simulate different tasks (e.g., fetching user data, fetching posts, fetching comments). Ensure they execute in sequence using await.
+
+5.Write an async function that attempts to divide two numbers. If the denominator is zero, throw an error and handle it gracefully using a try/catch block.
