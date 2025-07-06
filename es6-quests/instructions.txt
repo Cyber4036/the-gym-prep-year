@@ -1,0 +1,15 @@
+Practical Questions (for the below questions use ES6 practices)
+
+1. Write a function `findProperty` that takes an object and a string as arguments. The function should return the value of the property with the given string name if it exists in the object. If the property doesn’t exist, return `"Property not found"`.
+    
+2. Write a function `mergeObjects` that takes two objects as arguments and returns a new object that combines all properties from both objects. If a property exists in both objects, the value from the second object should overwrite the value from the first.
+    
+3. Write a function `countKeys` that takes an object as an argument and returns the number of properties (keys) it has.
+        
+4. Write a function `findLargest` that takes an array of numbers as an argument and returns the largest number in the array.
+   
+5. Write a function `reverseString` that takes a string as an argument and returns the reversed version of the string.
+        
+6. Write a function `filterEvens` that takes an array of numbers as an argument and returns a new array containing only the even numbers.
+    
+    
