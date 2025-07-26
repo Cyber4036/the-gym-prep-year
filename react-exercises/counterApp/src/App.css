@@ -1,0 +1,86 @@
+.element {
+  width: 300px; /* Content width */
+  padding: 20px; /* Inner spacing */
+  border: 2px solid #000; /* Visible edge */
+  margin: 10px; /* Outer spacing */
+  box-sizing: border-box; /* Makes width include padding+border */
+}
+
+:root {
+  --primary-bg: #ffffff;
+  --primary-text: #000000;
+  --secondary-bg: #000000;
+  --secondary-text: #ffffff;
+  --accent-color: #4a90e2; /* Example accent color */
+}
+
+body {
+  background-color: var(--primary-bg);
+  color: var(--primary-text);
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+}
+
+.btn {
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Outline button */
+.btn-outline {
+  background: transparent;
+  border: 2px solid var(--secondary-bg);
+  color: var(--secondary-bg);
+}
+
+.btn-outline:hover {
+  background: var(--secondary-bg);
+  color: var(--secondary-text);
+}
+
+/* Solid button (confirmation) */
+.btn-solid {
+  background: var(--secondary-bg);
+  color: var(--secondary-text);
+  border: 2px solid var(--secondary-bg);
+}
+
+.btn-solid:hover {
+  background: var(--primary-bg);
+  color: var(--primary-text);
+  border-color: var(--primary-text);
+}
+
+.input-field {
+  padding: 12px 15px;
+  border: 1px solid var(--secondary-bg);
+  border-radius: 6px;
+  background: transparent;
+  color: var(--primary-text);
+  transition: border 0.3s ease;
+}
+
+.input-field:focus {
+  outline: none;
+  border-color: var(--accent-color);
+  box-shadow: 0 0 0 2px rgba(74, 144, 226, 0.2);
+}
+
+/* Accessibility improvements */
+.btn:focus, .input-field:focus {
+  outline: 2px solid var(--accent-color);
+  outline-offset: 2px;
+}
+
+/* Dark mode consideration */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --primary-bg: #121212;
+    --primary-text: #ffffff;
+    --secondary-bg: #ffffff;
+    --secondary-text: #121212;
+  }
+}
