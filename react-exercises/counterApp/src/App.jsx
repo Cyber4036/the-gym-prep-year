@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import Displayer from './components/Displayer'
 import Button from './components/Button'
-import Switchy from './components/switchy'
+import Switchy from './components/Switchy'
 import './App.css'
 
 const App = () => {
@@ -22,8 +22,8 @@ const App = () => {
     <div className="">
       <h1>Counter App</h1>
       <Displayer value={count} className='element'/>
-      <Button minus={handleDecrement} add={handleIncrement} minusDisabled={count === 0} />
-      <div><Switchy value={on} swtch={handleTurnOn} styl={styl}></Switchy></div>
+      <Button minus={handleDecrement} add={handleIncrement} minusDisabled={count === 0} className='element'/>
+      <div><Switchy value={on} swtch={handleTurnOn} styl={styl} className='element'></Switchy></div>
 
     </div>
   

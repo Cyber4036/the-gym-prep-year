@@ -1,4 +1,4 @@
-import React, { use } from 'react'
+
 
 
 const Switchy =({value, swtch, styl})=>{
