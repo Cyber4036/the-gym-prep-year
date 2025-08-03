@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="green" style="width: 100px;
+  height: 100px;
+  background-color: #3498db;
+  border-radius: 50%;"/>
+    <div id="red" style="width: 100px;
+  height: 100px;
+  background-color: #d90e0e;
+  border-radius: 50%;"/>
+    <button type="button" id="button">Click Me</button>
+
+    <script>
+        const button= document.getElementById('button');
+        const red=document.getElementById('red');
+        button.addEventListener('click', ()=> red.remove());
+    </script>
+</body>
+</html>
