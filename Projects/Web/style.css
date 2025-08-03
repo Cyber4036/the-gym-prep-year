@@ -1,0 +1,67 @@
+*, *::before, *::after{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body{
+    background-color: burlywood;
+}
+
+nav{
+    display: flex;
+    height: 60px;
+    background-color: brown;
+    justify-content: space-between;
+    align-items: center;
+}
+
+span{
+    color: beige;
+    padding: 20px;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+
+    justify-content: space-around;
+    align-items: center;
+    width: 300px;
+    height: inherit;
+}
+
+li {
+
+    color: bisque;
+}
+
+
+
+.card{
+    border: solid 2px;
+    height: 250px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 18px;
+    padding: 10px;
+    justify-content: space-evenly;
+}
+
+img{
+
+    width: auto;
+    border-radius: 20px;
+}
+h4{
+
+    width: auto;
+}
+
+p{
+    width: auto;
+}
+
+
+
+

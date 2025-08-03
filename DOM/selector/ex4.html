@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul id="list">
+        <li>OFF</li>
+        <li>OFF</li>
+        <li>OFF</li>
+        <li id="disabled">OFF</li>
+        <li>OFF</li>
+        <li>OFF</li>
+        <li id="disabled">OFF</li>
+        <li>OFF</li>
+    </ul>
+    <button type="button" id="button">Click Me</button>
+
+    <script>
+        // const btn= document.getElementById('button');
+        // const listItems= document.querySelectorAll('#list li::#disabled');
+        // btn.addEventListener('click', () => {
+        //     for (let i=0; i<listItems.length;i++){
+        //         listItems.innerHTML='ON';
+        //     }
+        // })
+        const button = document.getElementById('button');
+const listItems = document.querySelectorAll('#list li');
+
+        button.addEventListener('click', () => {
+  // complete the code snippet
+  for (let i = 0; i < listItems.length; i++) {
+    if (listItems[i].id !== 'disabled') {
+      // toggle logic goes here
+      listItems[i].innerHTML='ON';
+    }
+  }
+});
+
+
+    </script>
+</body>
+</html>
