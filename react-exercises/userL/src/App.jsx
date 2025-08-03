@@ -5,12 +5,16 @@ import { useState, useEffect } from 'react'
 //API TO USE https://jsonplaceholder.typicode.com/users
 
 const App = () => {
+
+ 
+
   //states
   const [users, setUsers] = useState([])
   const [loading, setLoading]= useState(false)
 
   //effects
   useEffect(()=>{
+    setLoading(true)
     setTimeout(()=> {fetch('https://jsonplaceholder.typicode.com/users')
     .then(response => response.json())
     .then(data => setUsers(data))
@@ -21,15 +25,11 @@ const App = () => {
 
   },[])
 
-  //handlers
-  const handleFetch=()=>{
-    setLoading(true)
-  }
 
   return (
     <div>
       <h1>USER FETCHER</h1>
-      <button onClick={handleFetch}>Fetch</button>
+
       <Users users={users} loading={loading}></Users>
     </div>
   )
