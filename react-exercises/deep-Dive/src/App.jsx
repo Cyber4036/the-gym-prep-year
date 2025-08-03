@@ -2,6 +2,8 @@ import React from 'react'
 import {useState} from 'react'
 import Lists from './components/Lists.jsx'
 
+//API TO USE https://jsonplaceholder.typicode.com/users
+
 
 const App = () => {
   //states
