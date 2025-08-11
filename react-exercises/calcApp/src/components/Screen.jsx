@@ -1,0 +1,9 @@
+import React from 'react'
+
+const Screen = ({input}) => {
+  return (
+    <div>{input}</div>
+  )
+}
+
+export default Screen
