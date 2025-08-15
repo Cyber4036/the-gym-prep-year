@@ -1,32 +1,40 @@
-import React from 'react'
-import Screen from './components/Screen'
-import KeyPad from './components/KeyPad'
-import { useState } from 'react'
+import React, { useState } from 'react'
+
+import KeyPad from './components/KeyPad';
+
 
 const App = () => {
-//states
-  const [input,setInput]=useState('');
-  let buff= '';
 
-//handler
-  const handleClick=(e)=>{
-    if (e.target.value!== '='){
-      buff= input+(e.target.value);
-      setInput(buff);
-    }
+  //states
+  const [screen, setScreen]=useState('');
 
 
-    // buff= ''+(e.target.value)
-    // setInput(buff);
+
+  //handlers
+  const onButtonClick=(e)=>{
+    setScreen(screen+e.target.value);
+  }
+
+  const handleEqual=()=>{
+    setScreen(eval(screen));
+  }
+
+  const handleAC=()=>{
+    setScreen('');
+  }
+
+  const handleBack=()=>{
+    setScreen(screen.slice(0,-1));
   }
 
 
+
+  //rendering
+
   return (
     <div>
-      <h1>Calculator</h1>
-      <Screen input={input}></Screen>
-      <KeyPad handleClick={handleClick}></KeyPad>
-
+      <p className="screen">{screen}</p>
+      <KeyPad buttonClick={onButtonClick} onEqual={handleEqual} onAC={handleAC} onBack={handleBack}></KeyPad>
     </div>
   )
 }
